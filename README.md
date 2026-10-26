@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/pj4533/fishing-video-editing/actions/workflows/check.yml"><img alt="check" src="https://img.shields.io/github/actions/workflow/status/pj4533/fishing-video-editing/check.yml?branch=main&style=flat-square&label=check"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-ffd45a?style=flat-square"></a>
   <a href="https://agentskills.io"><img alt="Agent Skills standard" src="https://img.shields.io/badge/Agent%20Skills-SKILL.md-8fd3e8?style=flat-square"></a>
   <a href="https://code.claude.com/docs/en/plugins"><img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin%20%2B%20marketplace-d97757?style=flat-square"></a>
