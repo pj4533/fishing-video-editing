@@ -13,7 +13,7 @@ Crop-width quality ladder (references/wildlife-zoom.md): full-height 9:16 from 2
 ~8x, treelines smear past ~6x. Auto mode sets width = --k × the animal's box size, clamped
 to [--min-w, --max-w] and smoothed — the animal ends up ~1/k of the frame width. The
 argparse defaults (--k 9 --min-w 600) are the CONSERVATIVE cut; for the recommended extreme
-zoom (animal ~1/4-1/3 of the frame) pass e.g. --k 3.5 --min-w 48 --sigma 0.06, or --width
+zoom (animal ~1/4-1/3 of the frame) use flags like --k 3.5 --min-w 48 --sigma 0.06, or --width
 keyframes. The hard clamp is [48, 1215].
 
 Usage:
