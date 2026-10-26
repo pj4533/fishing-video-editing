@@ -1,0 +1,14 @@
+{
+  "name": "fishing-video-editing",
+  "description": "A Claude skill for editing raw fishing footage into shareable videos.",
+  "owner": { "name": "PJ Gray", "url": "https://github.com/pj4533" },
+  "plugins": [
+    {
+      "name": "fishing-video-editing",
+      "source": "./",
+      "description": "Edit raw action-cam fishing footage into YouTube edits, TikTok/Reels/Shorts catch features, full-trip recaps and 4K wildlife zooms.",
+      "category": "media",
+      "tags": ["video", "fishing", "ffmpeg", "whisper", "tiktok", "youtube"]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="Fishing Video Editing — a Claude skill">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1d33"/>
+      <stop offset="0.55" stop-color="#123a5c"/>
+      <stop offset="1" stop-color="#0a2a3f"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f6f8b" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#062033" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="fish" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9bd45a"/>
+      <stop offset="1" stop-color="#3f8f3a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd45a"/>
+      <stop offset="1" stop-color="#ff9f43"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="420" fill="url(#sky)"/>
+  <!-- hills -->
+  <path d="M0 250 C 160 200, 300 215, 420 235 S 700 190, 860 225 S 1120 205, 1280 230 L1280 280 L0 280 Z" fill="#0e3048"/>
+  <path d="M0 268 C 220 245, 420 262, 640 255 S 1020 245, 1280 262 L1280 290 L0 290 Z" fill="#103a52"/>
+  <!-- water -->
+  <rect y="282" width="1280" height="138" fill="url(#water)"/>
+  <g stroke="#8fd3e8" stroke-opacity="0.25" stroke-width="2" fill="none">
+    <path d="M60 318 q 30 -6 60 0 t 60 0"/>
+    <path d="M980 340 q 30 -6 60 0 t 60 0 t 60 0"/>
+    <path d="M300 372 q 30 -6 60 0 t 60 0"/>
+    <path d="M760 392 q 30 -6 60 0 t 60 0"/>
+  </g>
+  <!-- portrait 9:16 tracking frame -->
+  <g transform="translate(905 58)">
+    <rect x="0" y="0" width="176" height="312" rx="18" fill="#000" fill-opacity="0.18" stroke="url(#accent)" stroke-width="4"/>
+    <g stroke="#ffd45a" stroke-width="4" stroke-linecap="round" fill="none">
+      <path d="M-14 22 v-36 h36"/><path d="M190 22 v-36 h-36"/>
+      <path d="M-14 290 v36 h36"/><path d="M190 290 v36 h-36"/>
+    </g>
+    <!-- fish centered in frame, head kept in -->
+    <g transform="translate(88 170) rotate(-12)">
+      <path d="M-70 0 C -40 -34, 40 -36, 64 -4 C 70 2, 70 6, 64 10 C 40 36, -40 32, -70 0 Z" fill="url(#fish)"/>
+      <path d="M-70 0 L -104 -26 L -96 0 L -104 26 Z" fill="#3f8f3a"/>
+      <path d="M-20 -26 C 0 -48, 24 -46, 36 -30" fill="none" stroke="#2f6f2c" stroke-width="5"/>
+      <circle cx="44" cy="-6" r="5" fill="#0b1d33"/>
+      <path d="M64 6 L 76 10" stroke="#0b1d33" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <circle cx="88" cy="170" r="54" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 7"/>
+    <text x="88" y="300" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" fill-opacity="0.85">9:16 · TRACKED</text>
+  </g>
+  <!-- waveform / timeline strip -->
+  <g transform="translate(70 300)" fill="#8fd3e8" fill-opacity="0.55">
+    <rect x="0" y="22" width="5" height="16" rx="2"/><rect x="10" y="14" width="5" height="32" rx="2"/>
+    <rect x="20" y="6" width="5" height="48" rx="2"/><rect x="30" y="18" width="5" height="24" rx="2"/>
+    <rect x="40" y="10" width="5" height="40" rx="2"/><rect x="50" y="24" width="5" height="12" rx="2"/>
+    <rect x="68" y="27" width="5" height="6" rx="2"/><rect x="78" y="27" width="5" height="6" rx="2"/>
+    <rect x="96" y="12" width="5" height="36" rx="2"/><rect x="106" y="4" width="5" height="52" rx="2"/>
+    <rect x="116" y="16" width="5" height="28" rx="2"/><rect x="126" y="8" width="5" height="44" rx="2"/>
+    <rect x="136" y="20" width="5" height="20" rx="2"/>
+  </g>
+  <g transform="translate(70 300)" stroke="#ffd45a" stroke-width="3">
+    <line x1="61" y1="-2" x2="61" y2="62"/><line x1="89" y1="-2" x2="89" y2="62"/>
+  </g>
+  <text x="230" y="336" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#cfe8f2" fill-opacity="0.85">cut after the sentence · audio on the same frame · fish in the middle</text>
+  <!-- title -->
+  <text x="70" y="120" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#ffffff" letter-spacing="-1">Fishing Video Editing</text>
+  <text x="72" y="168" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" font-weight="500" fill="url(#accent)">A Claude skill: raw GoPro footage → finished clips</text>
+  <text x="72" y="214" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#cfe8f2">YouTube edits · TikTok / Reels / Shorts · full-trip recaps · 4K wildlife zooms</text>
+</svg>

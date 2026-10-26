@@ -1,0 +1,30 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Manifests are valid JSON
+        run: |
+          python -m json.tool .claude-plugin/plugin.json > /dev/null
+          python -m json.tool .claude-plugin/marketplace.json > /dev/null
+      - name: SKILL.md has name + description frontmatter
+        run: |
+          python - <<'PY'
+          import re, sys
+          s = open("skills/fishing-video-editing/SKILL.md").read()
+          m = re.match(r"^---\n(.*?)\n---\n", s, re.S)
+          assert m, "missing frontmatter"
+          fm = m.group(1)
+          assert re.search(r"^name: fishing-video-editing$", fm, re.M), "name"
+          assert re.search(r"^description: .{50,}", fm, re.M), "description"
+          print("ok")
+          PY
+      - name: Scripts compile
+        run: python -m py_compile skills/fishing-video-editing/scripts/*.py
+      - name: Shell scripts parse
+        run: bash -n skills/fishing-video-editing/scripts/*.sh
