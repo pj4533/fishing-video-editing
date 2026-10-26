@@ -191,6 +191,10 @@ Issues and pull requests are welcome, especially:
 Please keep the skill generic. Anything specific to one angler or one body of water belongs in your own notes, not in
 the skill.
 
+## Privacy
+
+Everything runs locally; the skill collects and sends no data. See [PRIVACY.md](PRIVACY.md).
+
 ## License
 
 [MIT](LICENSE) © PJ Gray
