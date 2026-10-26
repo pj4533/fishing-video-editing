@@ -3,9 +3,27 @@
   "displayName": "Fishing Video Editing",
   "version": "1.0.0",
   "description": "Turn raw GoPro/action-cam fishing footage into finished YouTube edits, per-catch TikTok/Reels/Shorts features, full-trip TikTok recaps and 4K wildlife zooms, with tracked fish-centering, sentence-safe cuts, captions, bleeps and A/V-sync checks.",
-  "author": { "name": "PJ Gray", "url": "https://github.com/pj4533" },
+  "author": {
+    "name": "PJ Gray",
+    "url": "https://github.com/pj4533"
+  },
   "homepage": "https://github.com/pj4533/fishing-video-editing",
   "repository": "https://github.com/pj4533/fishing-video-editing",
   "license": "MIT",
-  "keywords": ["fishing", "video-editing", "gopro", "ffmpeg", "whisper", "tiktok", "youtube", "shorts", "reels", "kayak-fishing", "agent-skills"]
+  "keywords": [
+    "fishing",
+    "video-editing",
+    "gopro",
+    "ffmpeg",
+    "whisper",
+    "tiktok",
+    "youtube",
+    "shorts",
+    "reels",
+    "kayak-fishing",
+    "agent-skills"
+  ],
+  "documentationUrl": "https://github.com/pj4533/fishing-video-editing#readme",
+  "supportUrl": "https://github.com/pj4533/fishing-video-editing/issues",
+  "icon": "./.claude-plugin/icon.png"
 }
