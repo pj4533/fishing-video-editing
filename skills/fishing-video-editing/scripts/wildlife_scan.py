@@ -23,7 +23,7 @@ Usage:
            OUTDIR/timeline.txt    one line per sample: t, n_dets, best conf
 Model: $WILDLIFE_MODELS/yolo11s.pt (default ~/.wildlife-models; references/setup.md).
 Python deps: ultralytics, sahi (use the detector venv — system Python usually lacks sahi).
---device defaults to mps (Apple silicon); pass --device cpu or cuda:0 elsewhere.
+--device defaults to mps (Apple silicon); use --device cpu or cuda:0 elsewhere.
 Decode uses -hwaccel videotoolbox on macOS (override with $FFMPEG_HWACCEL, e.g. "cuda" or "none").
 """
 import argparse, json, os, subprocess, sys, time

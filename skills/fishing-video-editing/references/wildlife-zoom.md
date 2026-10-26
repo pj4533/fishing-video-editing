@@ -64,7 +64,7 @@ Override it per run with `WILDLIFE_MODELS=/some/dir $V $S/wildlife_scan.py ...`.
 
 **Platform notes.** The scripts decode with `-hwaccel videotoolbox` on macOS (none
 elsewhere; override with `FFMPEG_HWACCEL=cuda|vaapi|none`) and the scan defaults to
-`--device mps` (Apple silicon). On Linux or Windows, pass `--device cpu`/`cuda:0`. The
+`--device mps` (Apple silicon). On Linux or Windows, use `--device cpu`/`cuda:0`. The
 `--mark` label font in `wildlife_reframe.py` defaults to a macOS path; set `$CAPTION_FONT`
 elsewhere. Run detector passes **one at a time**: several MPS/GPU models at once on
 a 16 GB machine will swap and hang.

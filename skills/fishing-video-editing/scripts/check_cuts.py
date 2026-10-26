@@ -22,7 +22,7 @@ Rules it enforces:
         Extensions > 1.5 s are marked REVIEW: they may pull in the start of the next line.
   IN  — no speech in the first 0.15 s after the cut. If there is, the cut is moved back to
         --pad-in seconds before the start of that speech run.
-Prints one CHOP line per bad cut and a total ("0 chopped cut(s)" = pass; the exit code is 0
+Prints one CHOP line per bad cut and a total ("0 chopped cut(s)" = clean; the exit code is 0
 either way); --fix writes the corrected segment list.
 """
 import json, subprocess, sys
@@ -36,7 +36,7 @@ N = int(SR * FR)
 
 def speech_mask(src, t0, t1):
     # snap to an absolute 30 ms grid so every call frames the audio identically; otherwise a
-    # noise blip can pass one check and fail the next depending on where the window started
+    # noise blip can clear one check and fail the next depending on where the window started
     t0 = max(0.0, round(t0 / FR) * FR)
     cmd = ["ffmpeg", "-v", "error", "-ss", f"{t0:.3f}", "-t", f"{t1 - t0:.3f}", "-i", src, "-vn",
            "-ac", "1", "-ar", str(SR), "-af", "highpass=f=120,lowpass=f=3800", "-f", "s16le", "-"]

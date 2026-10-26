@@ -6,7 +6,7 @@ Usage: burn_captions.py CONCAT_LIST BASE_MP4 OUT_MP4 [EXTRA_JSON]
 
 - CONCAT_LIST: the ffmpeg concat file used to build BASE_MP4 (lines: file '...').
   Word timing is derived PER SEGMENT (audio extracted and transcribed segment by
-  segment, offset by the segment's start in the assembly) — never from one pass
+  segment, offset by the segment's start in the assembly) — never from one run
   over the full video, where whisper drift accumulates to seconds.
 - Whisper tokens are merged into whole words: a token starting with a space begins
   a new word; a token without a leading space (continuations like "ko" in

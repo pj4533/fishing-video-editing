@@ -4,7 +4,7 @@
 Usage: wildlife_speck.py SRC START END anchors.json out_track.txt
   anchors.json: wildlife_track.py keyframes [[t_abs, x, y, w, h], ...] in 3840x2160 px.
 Black-hat blob detection on bright sky (half-res), chained frame to frame from each anchor in both
-directions. Output is wildlife_track.py format. Run a rolling-median outlier pass before
+directions. Output is wildlife_track.py format. Run a rolling-median outlier filter before
 wildlife_reframe.py: a lost frame can extrapolate far off (seen in testing).
 """
 import sys, json, subprocess, numpy as np, cv2
