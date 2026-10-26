@@ -22,8 +22,5 @@
     "reels",
     "kayak-fishing",
     "agent-skills"
-  ],
-  "documentationUrl": "https://github.com/pj4533/fishing-video-editing#readme",
-  "supportUrl": "https://github.com/pj4533/fishing-video-editing/issues",
-  "icon": "./.claude-plugin/icon.png"
+  ]
 }
